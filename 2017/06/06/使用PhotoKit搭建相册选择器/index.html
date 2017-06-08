@@ -89,7 +89,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="PhotoKit,相册选择器," />
 
 
 
@@ -105,15 +105,17 @@
 
 
 
-<meta name="description" content="我还在一直等，等一个人......">
-<meta property="og:type" content="website">
-<meta property="og:title" content="不羁放纵爱自由">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="闲谈 iOS8 以后苹果推出新的关于相册的框架-PhotoKit,相比较之前的AssetsLibrary 框架有了很大的提升，由于初次接触这个新的框架，也在网上查找了很多大神的博客资料，本文就浅谈一下自己对这个框架的理解。">
+<meta name="keywords" content="PhotoKit,相册选择器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用PhotoKit搭建相册选择器">
+<meta property="og:url" content="http://yoursite.com/2017/06/06/使用PhotoKit搭建相册选择器/index.html">
 <meta property="og:site_name" content="不羁放纵爱自由">
-<meta property="og:description" content="我还在一直等，等一个人......">
+<meta property="og:description" content="闲谈 iOS8 以后苹果推出新的关于相册的框架-PhotoKit,相比较之前的AssetsLibrary 框架有了很大的提升，由于初次接触这个新的框架，也在网上查找了很多大神的博客资料，本文就浅谈一下自己对这个框架的理解。">
+<meta property="og:updated_time" content="2017-06-07T06:22:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="不羁放纵爱自由">
-<meta name="twitter:description" content="我还在一直等，等一个人......">
+<meta name="twitter:title" content="使用PhotoKit搭建相册选择器">
+<meta name="twitter:description" content="闲谈 iOS8 以后苹果推出新的关于相册的框架-PhotoKit,相比较之前的AssetsLibrary 框架有了很大的提升，由于初次接触这个新的框架，也在网上查找了很多大神的博客资料，本文就浅谈一下自己对这个框架的理解。">
 
 
 
@@ -141,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/06/使用PhotoKit搭建相册选择器/"/>
 
 
 
 
 
-  <title>不羁放纵爱自由</title>
+  <title>使用PhotoKit搭建相册选择器 | 不羁放纵爱自由</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -173,9 +175,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-   page-home 
- ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -312,307 +312,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/07/图片拉伸处理/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="不会游泳的鱼">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不羁放纵爱自由">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/07/图片拉伸处理/" itemprop="url">图片拉伸处理</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-07T14:44:30+08:00">
-                2017-06-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/06/07/图片拉伸处理/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/06/07/图片拉伸处理/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>  在学习iOS以及平时做项目过程中，有时候我们需要对一张图片<code>UIImage</code>进行处理，让图片随着内容的增大或者缩小发生相应的改变而不会变形，这时候我们就需要对图片进行拉伸。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/07/图片拉伸处理/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-categories " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/07/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="不会游泳的鱼">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不羁放纵爱自由">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/07/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-07T14:23:02+08:00">
-                2017-06-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/06/07/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/06/07/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/07/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
 
   
 
@@ -638,9 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/06/使用PhotoKit搭建相册选择器/" itemprop="url">使用PhotoKit搭建相册选择器</a></h1>
+          <h1 class="post-title" itemprop="name headline">使用PhotoKit搭建相册选择器</h1>
         
 
         <div class="post-meta">
@@ -720,50 +420,192 @@
       
 
       
+        <h3 id="闲谈"><a href="#闲谈" class="headerlink" title="闲谈"></a>闲谈</h3><p> iOS8 以后苹果推出新的关于相册的框架-PhotoKit,相比较之前的AssetsLibrary 框架有了很大的提升，由于初次接触这个新的框架，也在网上查找了很多大神的博客资料，本文就浅谈一下自己对这个框架的理解。</p>
+<a id="more"></a>
+<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><code>PhotoKit</code> 主要有<code>PHAsset</code>、<code>PHFetchOptions</code>、<code>PHFetchResult</code>、<code>PHAssetCollection</code>、<code>PHImageManager</code>、<code>PHCollectionList</code>几个重要的类。</p>
+<p> <code>PHAsset</code>:代表照片库的一个资源  也就是具体的某一个照片或者视频。</p>
+<p> <code>PHFetchOptions</code>: 获取资源的参数 可以为nil</p>
+<p> <code>PHFetchResult</code>:表示一系列的资源结果集合，也可以是相册的集合 从<code>PHCollection</code>的方法中获得.</p>
+<p> <code>PHAssetCollection</code>: <code>PHCollection</code>的子类，表示一个相册或者一个时刻（最近删除、收藏）</p>
+<p> <code>PHImageManager</code>:用于处理资源的加载，加载图片的过程有缓存，可以使用     <code>PHImageRequestOptions</code>控制资源的输出尺寸等规格</p>
+<p> <code>PHCollectionList</code>:表示一组<code>PHCollection</code></p>
+<h3 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h3><ul>
+<li><p>1 由于从相册获取照片之后需要展示，所有首先我们需要创建一个展示你选中照片的界面，因此我使用的是<code>UICollectionView</code>布局界面，并自定义了一个<code>UICollectionViewCell</code> 可以实现删除照片 命名为 - <code>PhotoCell</code>,如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">#import &lt;UIKit/UIKit.h&gt;</div><div class="line">#import &lt;Photos/Photos.h&gt;</div><div class="line">@class PhotoCell;</div><div class="line">@protocol PhotoCellDelegate &lt;NSObject&gt;</div><div class="line">/**删除照片的代理方法*/</div><div class="line">-(void)deleteThePhotoForCell:(PhotoCell *)cell  deleteBtn:(UIButton *)btn;</div><div class="line">@end</div><div class="line"></div><div class="line"> @interface PhotoCell : UICollectionViewCell</div><div class="line">/**图片视图*/</div><div class="line">@property(nonatomic,strong)UIImageView *photoView;</div><div class="line">/**删除按钮*/</div><div class="line">@property(nonatomic,strong)UIButton *deleteBTn;</div><div class="line">/**代理*/</div><div class="line">@property(nonatomic,weak) id &lt;PhotoCellDelegate&gt; delegate;</div><div class="line">@end</div></pre></td></tr></table></figure>
+</li>
+<li><p>2 创建一个管理获取相册资源的工具类 - <code>YHPhotosData</code>,使用这个工具类实现以下功能：获取所有相册列表、获取某一个相册中的照片资源、 将具体某一个照片资源转化为照片。<br><code>YHPhotosData.h</code>文件中</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#import &lt;Foundation/Foundation.h&gt;</div><div class="line">#import &lt;Photos/Photos.h&gt;//系统照片的框架</div><div class="line">@interface YHPhotosData : NSObject</div><div class="line">//获取所有的相册集</div><div class="line">+(NSMutableArray *)getAllPhotoListData;</div><div class="line">//获取某一个相册的所有资源</div><div class="line">+(NSMutableArray *)getPhotosForPHAssetCollection:(PHAssetCollection *)collection;</div><div class="line">//从相册的某一个照片资源获取一张高清照片</div><div class="line">-(void)getImageObject:(id)set Complection:(void(^)(UIImage *photo,BOOL isDegraded))complection;</div><div class="line">@end</div></pre></td></tr></table></figure>
+<p><code>YHPhotosData.m</code>文件中</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">+(NSMutableArray *)getAllPhotoListData&#123;</div><div class="line">    NSMutableArray *dataArray = [NSMutableArray array];</div><div class="line">    //1.0列出所有智能相册</div><div class="line">    PHFetchResult *samrtResult  = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];</div><div class="line">  for(int i = 0 ;i&lt;samrtResult.count; i++) &#123;  </div><div class="line">        [dataArray addObject:samrtResult[i]];</div><div class="line">    &#125;</div><div class="line">   //2.0列出所有的用户创建的相册</div><div class="line">    PHFetchResult *userResult = [PHAssetCollection fetchTopLevelUserCollectionsWithOptions:nil];</div><div class="line">    for (PHAssetCollection *sub  in userResult) &#123;</div><div class="line">        [dataArray addObject:sub];</div><div class="line">    &#125;</div><div class="line">  return dataArray;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">+(NSMutableArray *)getPhotosForPHAssetCollection:(PHAssetCollection *)collection&#123;</div><div class="line">    NSMutableArray *photosArray = [NSMutableArray array];</div><div class="line">    //1.获取了结果集</div><div class="line">    PHFetchResult *photosResult = [PHAsset fetchAssetsInAssetCollection:collection options:nil];  </div><div class="line">    //2.便利结果集 取出具体某一张图片资源  添加在数组中  </div><div class="line">    for(PHAsset *set  in  photosResult)&#123;</div><div class="line">        if(set.mediaSubtypes == PHAssetMediaSubtypeNone)&#123;   </div><div class="line">            [photosArray addObject:set];</div><div class="line">        &#125;    </div><div class="line">    &#125;</div><div class="line">    return  photosArray;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">-(void)getImageObject:(id)set Complection:(void (^)(UIImage *, BOOL))complection</div><div class="line">&#123;</div><div class="line">    if ([set isEqual:[PHAsset class]])&#123;     </div><div class="line">        PHAsset *photoSet = set;</div><div class="line">        CGFloat mainWidth = [UIScreen mainScreen].bounds.size.width;</div><div class="line">       //1.0算出照片资源自身的比例</div><div class="line">        CGFloat setScale = photoSet.pixelWidth/photoSet.pixelHeight;</div><div class="line">        //1.1 获取屏幕比例</div><div class="line">        //屏幕分辨率 scale = 1 代表 分辨率是320 * 480; =2 代表 分辨率是 640 * 960; = 3 代表 分辨率是 1242 * 2208</div><div class="line">        CGFloat scale = [UIScreen mainScreen].scale;</div><div class="line">        //1.2计算照片在不同屏幕上的像素   </div><div class="line">        CGFloat pixWidth = mainWidth * scale;</div><div class="line">        //1.3根据图片自身比例计算照片在屏幕上的高</div><div class="line">        CGFloat pixheight = mainWidth/setScale;       </div><div class="line">        /**</div><div class="line">         *  PHImageManager 是通过请求的方式拉取图像，并可以控制请求得到的图像的尺寸、剪裁方式、质量，缓存以及请求本身的管理（发出请求、取消请求）等</div><div class="line">         *</div><div class="line">         *  @param pixelWidth 获取图片的宽</div><div class="line">         *  @param pixelHeight 获取图片的高</div><div class="line">         *  @param contentMode 图片的剪裁方式</div><div class="line">         *</div><div class="line">         *  @return</div><div class="line">         */    </div><div class="line">     [[PHImageManager defaultManager] requestImageForAsset:photoSet targetSize:CGSizeMake(pixWidth, pixheight) contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) &#123;</div><div class="line">         // 排除取消，错误，低清图三种情况，即已经获取到了高清图</div><div class="line">         BOOL downloadFinined = (![[info objectForKey:PHImageCancelledKey] boolValue] &amp;&amp; ![info objectForKey:PHImageErrorKey]);</div><div class="line">         if (downloadFinined) &#123;</div><div class="line">             //回调</div><div class="line">             if (complection)&#123;           </div><div class="line">                 complection(result,[[info objectForKey:PHImageResultIsDegradedKey] boolValue]);</div><div class="line">             &#125;</div><div class="line">         &#125;</div><div class="line">     &#125;];</div><div class="line"> &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>3 工具类写完之后，接下来开始创建相册列表控制器 <code>PhotosListVC</code> 用来展示所有的相册列表，同时自定义Cell（我这里定义的是<code>PhotoListCell</code>）用来显示每个相册。cell中显示的照片就是该相册中所有照片中的最后一张。<br>  <code>PhotoListCell</code> 定义非常简单，我在这里就不过多叙述了.</p>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/**图片视图*/</div><div class="line">@property(nonatomic,strong)UIImageView *photoView;</div><div class="line">/**标题*/</div><div class="line">@property(nonatomic,strong)UILabel *title;</div></pre></td></tr></table></figure>
+
+这里比较重要的一个方法就是 给cell设置默认数据。既相册的标题 以及显示的照片（最后一张）.
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">          ///设置数据</div><div class="line">          -(void)getImageForAssetCollection:(PHAssetCollection *)coll&#123;  </div><div class="line">              //获取该相册最后一张照片资源</div><div class="line">              PHAsset *set = [[YHPhotosData getPhotosForPHAssetCollection:coll] lastObject] ;   </div><div class="line">              //转化为照片  并设置数据  （由于相册可能没有照片需要判断一下，给一张默认的照片）          </div><div class="line">              [[PHImageManager defaultManager]requestImageForAsset:set targetSize:self.photoView.frame.size contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) &#123;</div><div class="line">                  if (result == nil) &#123;</div><div class="line">                      self.photoView.image = [UIImage imageNamed:@&quot;no_data&quot;];</div><div class="line">                  &#125;else &#123;       </div><div class="line">                      self.photoView.image = result;</div><div class="line">                  &#125;</div><div class="line">              &#125;];</div><div class="line">               self.title.text = coll.localizedTitle;</div><div class="line">          &#125;</div><div class="line"></div><div class="line">          ```  </div><div class="line"></div><div class="line">-  4  创建展示相册所有照片的控制器`PhotoShowVC`,并自定义个Cell展示照片,这里我自己定义的是`PhotosShowCell`.</div><div class="line">    `PhotosShowCell.h`中</div></pre></td></tr></table></figure>
+</code></pre><p>#import <uikit uikit.h=""><br>#import <photos photos.h=""><br>//获取点击的照片<br>typedef void (^PhotosShowCellBlock)(UIImage <em>image);<br>@interface PhotosShowCell : UICollectionViewCell<br>/**选择按钮</em>/<br>@property(nonatomic,strong)UIButton <em>selectBTn;<br>//获取点击的那个照片blcok<br>@property(nonatomic,copy)PhotosShowCellBlock cellBlock;<br>//设置数据<br>-(void)setPhotoForPHAsset:(PHAsset </em>)set;<br>@end</photos></uikit></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`PhotosShowCell.m`中</div></pre></td></tr></table></figure>
+<p>//设置cell数据 传递过来的都是一张照片资源  不是照片 需要转化<br>-(void)setPhotoForPHAsset:(PHAsset *)set{</p>
+<pre><code>[[PHImageManager defaultManager]requestImageForAsset:set targetSize:self.photoView.frame.size contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {  
+    if (result) {      
+        // 排除取消，错误，低清图三种情况，即已经获取到了高清图
+        BOOL downloadFinined = (![[info objectForKey:PHImageCancelledKey] boolValue] &amp;&amp; ![info objectForKey:PHImageErrorKey]);
+        if (downloadFinined) {     
+            self.photoView.image =result;   
+            if (self.cellBlock) {
+              //获取点击的照片
+                self.cellBlock(result);
+            }
+        }          
+    }else {
+        self.photoView.image = [UIImage imageNamed:@&quot;no_data&quot;];
+    }     
+}];
+</code></pre><p>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">在控制器`PhotoShowVC`创建一个可变数组`selectImageArray`存放选中的所有照片，在cell的点击方法中 执行cell的block方法获取到点击的照片, 并存放到数组`selectImageArray`中，同时改变cell上按钮的状态。</div></pre></td></tr></table></figure>
+<p>-(void)collectionView:(UICollectionView <em>)collectionView didSelectItemAtIndexPath:(NSIndexPath </em>)indexPath{</p>
+<pre><code>PhotosShowCell *cell  = (PhotosShowCell *)[collectionView cellForItemAtIndexPath:indexPath];
+if (cell.selectBTn.selected) {
+    cell.selectBTn.selected = NO;  
+    [cell.selectBTn setImage:[UIImage imageNamed:@&quot;select_no&quot;] forState:UIControlStateNormal];
+    [self.selectImageArray removeObjectAtIndex:indexPath.row];
+}else {
+    cell.selectBTn.selected = YES;
+    [cell.selectBTn setImage:[UIImage imageNamed:@&quot;select_yes&quot;] forState:UIControlStateNormal];  
+    [cell setPhotoForPHAsset:self.imageArray[indexPath.row]];
+     cell.cellBlock = ^(UIImage *image) {
+     [self.selectImageArray addObject:image];
+    };   
+}
+</code></pre><p>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">然后在控制器`PhotoShowVC`创建完成、预览按钮以及定义一个返回首页并传递照片到首页的Blcok ，当选择结束点击完成时候，执行Blcok 将选中的图片数组传递到首页。</div></pre></td></tr></table></figure>
+<p>-(void)clickBtn:(UIButton *)sender{</p>
+<pre><code>if (self.selectImageArray.count &gt; 0) {
+    if (self.block) {   
+       // [self.navigationController popViewControllerAnimated:YES];
+        self.block(self.selectImageArray);
+    }
+}else {
+    NSLog(@&quot;还没选择图片&quot;);
+}
+</code></pre><p>}<br>```<br>预览界面就不在过多叙述了，非常简单，详情看<a href="https://github.com/yuhao-ios/YHPhotos.git" target="_blank" rel="external">Demo</a>。</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
         
-          <h3 id="闲谈"><a href="#闲谈" class="headerlink" title="闲谈"></a>闲谈</h3><p> iOS8 以后苹果推出新的关于相册的框架-PhotoKit,相比较之前的AssetsLibrary 框架有了很大的提升，由于初次接触这个新的框架，也在网上查找了很多大神的博客资料，本文就浅谈一下自己对这个框架的理解。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/06/使用PhotoKit搭建相册选择器/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+
+      
+    </div>
+
+    <div>
+      
         
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="不会游泳的鱼 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.png" alt="不会游泳的鱼 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
-      
-    </div>
-
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/PhotoKit/" rel="tag"># PhotoKit</a>
+          
+            <a href="/tags/相册选择器/" rel="tag"># 相册选择器</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/07/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -771,6 +613,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -790,8 +643,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -891,6 +753,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#闲谈"><span class="nav-number">1.</span> <span class="nav-text">闲谈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍"><span class="nav-number">2.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始搭建"><span class="nav-number">3.</span> <span class="nav-text">开始搭建</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1016,10 +894,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
@@ -1037,6 +915,18 @@
       <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/06/06/使用PhotoKit搭建相册选择器/';
+          this.page.identifier = '2017/06/06/使用PhotoKit搭建相册选择器/';
+          this.page.title = '使用PhotoKit搭建相册选择器';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
