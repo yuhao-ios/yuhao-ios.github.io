@@ -963,7 +963,15 @@
           
 
 
-          
+          <% if (page.comments){ %>
+<section id="comment">
+  <% if(config.disqus_shortname) { %>
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  <% } %>
+</section>
+<% } %>
 
         </div>
         
@@ -1098,29 +1106,24 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2015 - 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">不会游泳的鱼</span>
-</div>
-
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
-  </a>
-</div>
-
-
+        <% if ((page.layout == 'post' || page.layout == 'page') && config.disqus_shortname && page.comments){ %>
+    <script type="text/javascript">
+    var disqus_shortname = '<%= config.disqus_shortname %>';
+    var disqus_config = function () {
+        this.page.url = '<%= config.url %>/<%= page.path %>';
+        this.page.identifier = '/<%= page.path %>';
+        this.page.title = '<%= page.title %>';
+    };
+    (function(){
+      var d = document;
+      var dsq = d.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
+      (d.head || d.body).appendChild(dsq);
+    })();
+    </script>
+<% } %>
         
 
         
@@ -1224,37 +1227,16 @@
   
 
 
-<% if (page.comment){ %>
-<section id="comment">
-  <h2 class="title"><%= __('comment') %></h2>
+  
 
-<% if(theme.duoshuo_shortname) { %>
- 
-  	   <!-- 多说评论框 start -->
- 		<div class="ds-thread" data-thread-key="<%- page.path %>" data-title="<%- page.title %>" data-url="<%- page.permalink %>"></div>
-		<!-- 多说评论框 end -->
-		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-		<script type="text/javascript">
-		var duoshuoQuery = {short_name:"duoshuo_shortname"};   <!-- 替换这里的duoshuo_shortname为前面注册的shortname -->
-			(function() {
-				var ds = document.createElement('script');
-				ds.type = 'text/javascript';ds.async = true;
-				ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.unstable.js';
-				ds.charset = 'UTF-8';
-				(document.getElementsByTagName('head')[0] 
-				 || document.getElementsByTagName('body')[0]).appendChild(ds);
-			})();
-			</script>
-		<!-- 多说公共JS代码 end -->
- 
-  <% } else if(config.disqus_shortname) { %>
-  	 <div id="disqus_thread">
-     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  	 </div>
-  <% } %>
- 
-</section>
-<% } %>
+    
+      <script id="dsq-count-scr" src="https://yuhaoios.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
 
 
 
